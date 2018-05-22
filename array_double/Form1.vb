@@ -10,19 +10,24 @@
     End Sub
 
     Private Sub btn_simpan_Click(sender As Object, e As EventArgs) Handles btn_simpan.Click
-        If counter = 0 Then
+        If IsNumeric(txt_nim.Text) Then
+            If counter = 0 Then
 
-            data_array(counter) = txt_nim.Text
-            ListBox1.Items.Add(data_array(counter))
-            counter = counter + 1
-            txt_nim.Text = ""
+                data_array(counter) = txt_nim.Text
+                ListBox1.Items.Add(data_array(counter))
+                counter = counter + 1
+                txt_nim.Text = ""
+            Else
+                ReDim Preserve data_array(UBound(data_array) + 1)
+                data_array(counter) = txt_nim.Text
+                ListBox1.Items.Add(data_array(counter))
+                counter = counter + 1
+                txt_nim.Text = ""
+            End If
         Else
-            ReDim Preserve data_array(UBound(data_array) + 1)
-            data_array(counter) = txt_nim.Text
-            ListBox1.Items.Add(data_array(counter))
-            counter = counter + 1
-            txt_nim.Text = ""
+            MsgBox("Hanya masukkan data berupa angka !!", MsgBoxStyle.Critical)
         End If
+
     End Sub
 
     Sub cari_sama()
@@ -185,5 +190,12 @@
         Next
         txt_cari.Text = ""
         txt_max.Text = ""
+    End Sub
+
+    Private Sub txt_nim_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txt_nim.KeyPress
+
+        If e.KeyChar = Chr(13) Then
+            btn_simpan.Focus()
+        End If
     End Sub
 End Class

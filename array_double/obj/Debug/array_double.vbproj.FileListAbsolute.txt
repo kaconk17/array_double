@@ -8,3 +8,13 @@ F:\Kuliah\tugas vb\array_double\array_double\array_double\obj\Debug\array_double
 F:\Kuliah\tugas vb\array_double\array_double\array_double\obj\Debug\array_double.exe
 F:\Kuliah\tugas vb\array_double\array_double\array_double\obj\Debug\array_double.xml
 F:\Kuliah\tugas vb\array_double\array_double\array_double\obj\Debug\array_double.pdb
+F:\Project\array\array_double\obj\Debug\array_double.exe
+F:\Project\array\array_double\obj\Debug\array_double.xml
+F:\Project\array\array_double\obj\Debug\array_double.pdb
+F:\Project\array\array_double\bin\Debug\array_double.exe
+F:\Project\array\array_double\bin\Debug\array_double.pdb
+F:\Project\array\array_double\bin\Debug\array_double.xml
+F:\Project\array\array_double\obj\Debug\array_double.vbprojResolveAssemblyReference.cache
+F:\Project\array\array_double\obj\Debug\array_double.Form1.resources
+F:\Project\array\array_double\obj\Debug\array_double.Resources.resources
+F:\Project\array\array_double\obj\Debug\array_double.vbproj.GenerateResource.Cache
