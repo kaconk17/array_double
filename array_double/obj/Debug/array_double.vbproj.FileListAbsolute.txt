@@ -1,0 +1,10 @@
+F:\Kuliah\tugas vb\array_double\array_double\array_double\bin\Debug\array_double.exe
+F:\Kuliah\tugas vb\array_double\array_double\array_double\bin\Debug\array_double.pdb
+F:\Kuliah\tugas vb\array_double\array_double\array_double\bin\Debug\array_double.xml
+F:\Kuliah\tugas vb\array_double\array_double\array_double\obj\Debug\array_double.vbprojResolveAssemblyReference.cache
+F:\Kuliah\tugas vb\array_double\array_double\array_double\obj\Debug\array_double.Form1.resources
+F:\Kuliah\tugas vb\array_double\array_double\array_double\obj\Debug\array_double.Resources.resources
+F:\Kuliah\tugas vb\array_double\array_double\array_double\obj\Debug\array_double.vbproj.GenerateResource.Cache
+F:\Kuliah\tugas vb\array_double\array_double\array_double\obj\Debug\array_double.exe
+F:\Kuliah\tugas vb\array_double\array_double\array_double\obj\Debug\array_double.xml
+F:\Kuliah\tugas vb\array_double\array_double\array_double\obj\Debug\array_double.pdb
