@@ -7,32 +7,26 @@
         Check_queue.CheckState = CheckState.Checked
     End Sub
 
-    Private Sub Check_queue_CheckStateChanged(sender As Object, e As EventArgs)
-        If Check_queue.CheckState = CheckState.Checked Then
-            Check_stack.CheckState = CheckState.Unchecked
-        End If
-    End Sub
-
-    Private Sub Check_stack_CheckStateChanged(sender As Object, e As EventArgs)
-        If Check_stack.CheckState = CheckState.Checked Then
-            Check_queue.CheckState = CheckState.Unchecked
-        End If
-    End Sub
 
     Private Sub btn_simpan_Click(sender As Object, e As EventArgs) Handles btn_simpan.Click
-        If counter = 0 Then
-
-            data_array(counter) = txt_nama.Text
-            ListBox1.Items.Add((counter + 1).ToString & " - " & data_array(counter))
-            counter = counter + 1
-            txt_nama.Text = ""
+        If txt_nama.Text = "" Then
+            MsgBox("Nama belum diisi !!", MsgBoxStyle.Critical)
         Else
-            ReDim Preserve data_array(UBound(data_array) + 1)
-            data_array(counter) = txt_nama.Text
-            ListBox1.Items.Add((counter + 1).ToString & " - " & data_array(counter))
-            counter = counter + 1
-            txt_nama.Text = ""
+            If counter = 0 Then
+
+                data_array(counter) = txt_nama.Text.ToString
+                ListBox1.Items.Add((counter + 1).ToString & " - " & data_array(counter))
+                counter = counter + 1
+                txt_nama.Text = ""
+            Else
+                ReDim Preserve data_array(UBound(data_array) + 1)
+                data_array(counter) = txt_nama.Text.ToString
+                ListBox1.Items.Add((counter + 1).ToString & " - " & data_array(counter))
+                counter = counter + 1
+                txt_nama.Text = ""
+            End If
         End If
+
     End Sub
     Sub refresh()
         Dim max As Integer = UBound(data_array, 1)
@@ -90,5 +84,23 @@
 
     Private Sub btn_refresh_Click(sender As Object, e As EventArgs) Handles btn_refresh.Click
         refresh()
+    End Sub
+
+    Private Sub Check_queue_CheckedChanged(sender As Object, e As EventArgs) Handles Check_queue.CheckedChanged
+        If Check_queue.CheckState = CheckState.Checked Then
+            Check_stack.CheckState = CheckState.Unchecked
+        End If
+    End Sub
+
+    Private Sub Check_stack_CheckedChanged(sender As Object, e As EventArgs) Handles Check_stack.CheckedChanged
+        If Check_stack.CheckState = CheckState.Checked Then
+            Check_queue.CheckState = CheckState.Unchecked
+        End If
+    End Sub
+
+    Private Sub txt_nama_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txt_nama.KeyPress
+        If e.KeyChar = Chr(13) Then
+            btn_simpan.Focus()
+        End If
     End Sub
 End Class

@@ -33,8 +33,8 @@ Partial Class queue_stack
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Check_stack = New System.Windows.Forms.CheckBox()
         Me.Check_queue = New System.Windows.Forms.CheckBox()
+        Me.Check_stack = New System.Windows.Forms.CheckBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -138,16 +138,6 @@ Partial Class queue_stack
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Metode"
         '
-        'Check_stack
-        '
-        Me.Check_stack.AutoSize = True
-        Me.Check_stack.Location = New System.Drawing.Point(23, 58)
-        Me.Check_stack.Name = "Check_stack"
-        Me.Check_stack.Size = New System.Drawing.Size(54, 17)
-        Me.Check_stack.TabIndex = 40
-        Me.Check_stack.Text = "Stack"
-        Me.Check_stack.UseVisualStyleBackColor = True
-        '
         'Check_queue
         '
         Me.Check_queue.AutoSize = True
@@ -157,6 +147,16 @@ Partial Class queue_stack
         Me.Check_queue.TabIndex = 39
         Me.Check_queue.Text = "Queue"
         Me.Check_queue.UseVisualStyleBackColor = True
+        '
+        'Check_stack
+        '
+        Me.Check_stack.AutoSize = True
+        Me.Check_stack.Location = New System.Drawing.Point(23, 58)
+        Me.Check_stack.Name = "Check_stack"
+        Me.Check_stack.Size = New System.Drawing.Size(54, 17)
+        Me.Check_stack.TabIndex = 40
+        Me.Check_stack.Text = "Stack"
+        Me.Check_stack.UseVisualStyleBackColor = True
         '
         'queue_stack
         '
@@ -192,6 +192,6 @@ Partial Class queue_stack
     Friend WithEvents Label1 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Check_stack As CheckBox
-    Friend WithEvents Check_queue As CheckBox
+    Public WithEvents Check_stack As CheckBox
+    Public WithEvents Check_queue As CheckBox
 End Class
