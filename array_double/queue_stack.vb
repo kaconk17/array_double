@@ -23,13 +23,13 @@
         If counter = 0 Then
 
             data_array(counter) = txt_nama.Text
-            ListBox1.Items.Add(data_array(counter))
+            ListBox1.Items.Add((counter + 1).ToString & " - " & data_array(counter))
             counter = counter + 1
             txt_nama.Text = ""
         Else
             ReDim Preserve data_array(UBound(data_array) + 1)
             data_array(counter) = txt_nama.Text
-            ListBox1.Items.Add(data_array(counter))
+            ListBox1.Items.Add((counter + 1).ToString & " - " & data_array(counter))
             counter = counter + 1
             txt_nama.Text = ""
         End If
@@ -39,9 +39,10 @@
         ListBox1.Items.Clear()
         For a As Integer = 0 To max Step 1
 
-            ListBox1.Items.Add(data_array(a).ToString) 'menambahkan semua data dalam data_array kedalam listbox
+            ListBox1.Items.Add((a + 1).ToString & " - " & data_array(a).ToString) 'menambahkan semua data dalam data_array kedalam listbox
 
         Next
+
     End Sub
     Sub next_queue()
 
@@ -58,6 +59,22 @@
             Next
 
             ReDim Preserve data_array(max - 1)
+            counter = counter - 1
+            refresh()
+        End If
+
+    End Sub
+    Sub next_stack()
+        Dim max As Integer = UBound(data_array, 1) 'menghitung jumlah total index pada array data_array
+        If max < 0 Then
+            MsgBox("Data kosong", MsgBoxStyle.Critical)
+        Else
+            'Dim temp As String
+            ListBox2.Items.Add(data_array(max))
+
+
+            ReDim Preserve data_array(max - 1)
+            counter = counter - 1
             refresh()
         End If
 
@@ -67,7 +84,7 @@
         If Check_queue.CheckState = CheckState.Checked Then
             next_queue()
         Else
-
+            next_stack()
         End If
     End Sub
 
