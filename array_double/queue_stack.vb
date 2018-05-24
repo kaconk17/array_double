@@ -7,13 +7,13 @@
         Check_queue.CheckState = CheckState.Checked
     End Sub
 
-    Private Sub Check_queue_CheckStateChanged(sender As Object, e As EventArgs) Handles Check_queue.CheckStateChanged
+    Private Sub Check_queue_CheckStateChanged(sender As Object, e As EventArgs)
         If Check_queue.CheckState = CheckState.Checked Then
             Check_stack.CheckState = CheckState.Unchecked
         End If
     End Sub
 
-    Private Sub Check_stack_CheckStateChanged(sender As Object, e As EventArgs) Handles Check_stack.CheckStateChanged
+    Private Sub Check_stack_CheckStateChanged(sender As Object, e As EventArgs)
         If Check_stack.CheckState = CheckState.Checked Then
             Check_queue.CheckState = CheckState.Unchecked
         End If

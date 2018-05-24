@@ -26,7 +26,6 @@ Partial Class mian_menu
         Me.MenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.QueueToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.QueueToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LinkListToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LinkListToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -42,7 +41,7 @@ Partial Class mian_menu
         '
         'MenuToolStripMenuItem
         '
-        Me.MenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.QueueToolStripMenuItem, Me.QueueToolStripMenuItem1, Me.LinkListToolStripMenuItem, Me.LinkListToolStripMenuItem1})
+        Me.MenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.QueueToolStripMenuItem, Me.QueueToolStripMenuItem1, Me.LinkListToolStripMenuItem1})
         Me.MenuToolStripMenuItem.Name = "MenuToolStripMenuItem"
         Me.MenuToolStripMenuItem.Size = New System.Drawing.Size(50, 20)
         Me.MenuToolStripMenuItem.Text = "Menu"
@@ -57,13 +56,7 @@ Partial Class mian_menu
         '
         Me.QueueToolStripMenuItem1.Name = "QueueToolStripMenuItem1"
         Me.QueueToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
-        Me.QueueToolStripMenuItem1.Text = "Queue"
-        '
-        'LinkListToolStripMenuItem
-        '
-        Me.LinkListToolStripMenuItem.Name = "LinkListToolStripMenuItem"
-        Me.LinkListToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.LinkListToolStripMenuItem.Text = "Stack"
+        Me.QueueToolStripMenuItem1.Text = "Queue & Stack"
         '
         'LinkListToolStripMenuItem1
         '
@@ -91,6 +84,5 @@ Partial Class mian_menu
     Friend WithEvents MenuToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents QueueToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents QueueToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents LinkListToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents LinkListToolStripMenuItem1 As ToolStripMenuItem
 End Class

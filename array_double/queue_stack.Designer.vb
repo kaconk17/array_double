@@ -30,9 +30,12 @@ Partial Class queue_stack
         Me.ListBox2 = New System.Windows.Forms.ListBox()
         Me.btn_next = New System.Windows.Forms.Button()
         Me.btn_refresh = New System.Windows.Forms.Button()
-        Me.Check_queue = New System.Windows.Forms.CheckBox()
-        Me.Check_stack = New System.Windows.Forms.CheckBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Check_stack = New System.Windows.Forms.CheckBox()
+        Me.Check_queue = New System.Windows.Forms.CheckBox()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'btn_simpan
@@ -78,16 +81,16 @@ Partial Class queue_stack
         '
         Me.ListBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ListBox2.FormattingEnabled = True
-        Me.ListBox2.Location = New System.Drawing.Point(242, 173)
+        Me.ListBox2.Location = New System.Drawing.Point(257, 173)
         Me.ListBox2.Name = "ListBox2"
-        Me.ListBox2.Size = New System.Drawing.Size(161, 236)
+        Me.ListBox2.Size = New System.Drawing.Size(142, 236)
         Me.ListBox2.TabIndex = 34
         '
         'btn_next
         '
-        Me.btn_next.Location = New System.Drawing.Point(165, 135)
+        Me.btn_next.Location = New System.Drawing.Point(186, 173)
         Me.btn_next.Name = "btn_next"
-        Me.btn_next.Size = New System.Drawing.Size(75, 23)
+        Me.btn_next.Size = New System.Drawing.Size(47, 23)
         Me.btn_next.TabIndex = 35
         Me.btn_next.Text = "Next"
         Me.btn_next.UseVisualStyleBackColor = True
@@ -104,44 +107,65 @@ Partial Class queue_stack
         Me.btn_refresh.TabIndex = 36
         Me.btn_refresh.UseVisualStyleBackColor = True
         '
-        'Check_queue
-        '
-        Me.Check_queue.AutoSize = True
-        Me.Check_queue.Location = New System.Drawing.Point(322, 60)
-        Me.Check_queue.Name = "Check_queue"
-        Me.Check_queue.Size = New System.Drawing.Size(58, 17)
-        Me.Check_queue.TabIndex = 37
-        Me.Check_queue.Text = "Queue"
-        Me.Check_queue.UseVisualStyleBackColor = True
-        '
-        'Check_stack
-        '
-        Me.Check_stack.AutoSize = True
-        Me.Check_stack.Location = New System.Drawing.Point(322, 92)
-        Me.Check_stack.Name = "Check_stack"
-        Me.Check_stack.Size = New System.Drawing.Size(54, 17)
-        Me.Check_stack.TabIndex = 38
-        Me.Check_stack.Text = "Stack"
-        Me.Check_stack.UseVisualStyleBackColor = True
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label1.Location = New System.Drawing.Point(21, 157)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(69, 13)
+        Me.Label1.Size = New System.Drawing.Size(72, 13)
         Me.Label1.TabIndex = 39
-        Me.Label1.Text = "Daftar Antian"
+        Me.Label1.Text = "Daftar Antrian"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label3.Location = New System.Drawing.Point(254, 157)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(78, 13)
+        Me.Label3.TabIndex = 40
+        Me.Label3.Text = "Telah Diproses"
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.Check_stack)
+        Me.GroupBox1.Controls.Add(Me.Check_queue)
+        Me.GroupBox1.Location = New System.Drawing.Point(294, 38)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(105, 100)
+        Me.GroupBox1.TabIndex = 41
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Metode"
+        '
+        'Check_stack
+        '
+        Me.Check_stack.AutoSize = True
+        Me.Check_stack.Location = New System.Drawing.Point(23, 58)
+        Me.Check_stack.Name = "Check_stack"
+        Me.Check_stack.Size = New System.Drawing.Size(54, 17)
+        Me.Check_stack.TabIndex = 40
+        Me.Check_stack.Text = "Stack"
+        Me.Check_stack.UseVisualStyleBackColor = True
+        '
+        'Check_queue
+        '
+        Me.Check_queue.AutoSize = True
+        Me.Check_queue.Location = New System.Drawing.Point(23, 26)
+        Me.Check_queue.Name = "Check_queue"
+        Me.Check_queue.Size = New System.Drawing.Size(58, 17)
+        Me.Check_queue.TabIndex = 39
+        Me.Check_queue.Text = "Queue"
+        Me.Check_queue.UseVisualStyleBackColor = True
         '
         'queue_stack
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(445, 458)
+        Me.ClientSize = New System.Drawing.Size(426, 458)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Check_stack)
-        Me.Controls.Add(Me.Check_queue)
         Me.Controls.Add(Me.btn_refresh)
         Me.Controls.Add(Me.btn_next)
         Me.Controls.Add(Me.ListBox2)
@@ -151,6 +175,8 @@ Partial Class queue_stack
         Me.Controls.Add(Me.txt_nama)
         Me.Name = "queue_stack"
         Me.Text = "queue_stack"
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -163,7 +189,9 @@ Partial Class queue_stack
     Friend WithEvents ListBox2 As ListBox
     Friend WithEvents btn_next As Button
     Friend WithEvents btn_refresh As Button
-    Friend WithEvents Check_queue As CheckBox
-    Friend WithEvents Check_stack As CheckBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Check_stack As CheckBox
+    Friend WithEvents Check_queue As CheckBox
 End Class
