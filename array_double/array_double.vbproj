@@ -71,6 +71,18 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="link_list.Designer.vb">
+      <DependentUpon>link_list.vb</DependentUpon>
+    </Compile>
+    <Compile Include="link_list.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mian_menu.Designer.vb">
+      <DependentUpon>mian_menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mian_menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -86,16 +98,31 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="queue_stack.Designer.vb">
+      <DependentUpon>queue_stack.vb</DependentUpon>
+    </Compile>
+    <Compile Include="queue_stack.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="link_list.resx">
+      <DependentUpon>link_list.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mian_menu.resx">
+      <DependentUpon>mian_menu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="queue_stack.resx">
+      <DependentUpon>queue_stack.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

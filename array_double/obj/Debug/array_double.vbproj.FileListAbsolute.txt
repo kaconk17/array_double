@@ -18,3 +18,16 @@ F:\Project\array\array_double\obj\Debug\array_double.vbprojResolveAssemblyRefere
 F:\Project\array\array_double\obj\Debug\array_double.Form1.resources
 F:\Project\array\array_double\obj\Debug\array_double.Resources.resources
 F:\Project\array\array_double\obj\Debug\array_double.vbproj.GenerateResource.Cache
+F:\Project\array_single\array_double\obj\Debug\array_double.exe
+F:\Project\array_single\array_double\obj\Debug\array_double.xml
+F:\Project\array_single\array_double\obj\Debug\array_double.pdb
+F:\Project\array_single\array_double\bin\Debug\array_double.exe
+F:\Project\array_single\array_double\bin\Debug\array_double.pdb
+F:\Project\array_single\array_double\bin\Debug\array_double.xml
+F:\Project\array_single\array_double\obj\Debug\array_double.vbprojResolveAssemblyReference.cache
+F:\Project\array_single\array_double\obj\Debug\array_double.Form1.resources
+F:\Project\array_single\array_double\obj\Debug\array_double.Resources.resources
+F:\Project\array_single\array_double\obj\Debug\array_double.vbproj.GenerateResource.Cache
+F:\Project\array_single\array_double\obj\Debug\array_double.link_list.resources
+F:\Project\array_single\array_double\obj\Debug\array_double.mian_menu.resources
+F:\Project\array_single\array_double\obj\Debug\array_double.queue_stack.resources
