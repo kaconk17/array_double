@@ -49,9 +49,9 @@ Partial Class link_list
         Me.Check_Insert = New System.Windows.Forms.CheckBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.btn_refresh = New System.Windows.Forms.Button()
-        Me.ListBox2 = New System.Windows.Forms.ListBox()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label_total = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -170,7 +170,7 @@ Partial Class link_list
         '
         'btn_next
         '
-        Me.btn_next.Location = New System.Drawing.Point(148, 179)
+        Me.btn_next.Location = New System.Drawing.Point(162, 179)
         Me.btn_next.Name = "btn_next"
         Me.btn_next.Size = New System.Drawing.Size(47, 23)
         Me.btn_next.TabIndex = 47
@@ -317,63 +317,61 @@ Partial Class link_list
         Me.Label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label3.Location = New System.Drawing.Point(260, 223)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(78, 13)
+        Me.Label3.Size = New System.Drawing.Size(0, 13)
         Me.Label3.TabIndex = 50
-        Me.Label3.Text = "Telah Diproses"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label1.Location = New System.Drawing.Point(27, 223)
+        Me.Label1.Location = New System.Drawing.Point(31, 236)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(72, 13)
+        Me.Label1.Size = New System.Drawing.Size(67, 13)
         Me.Label1.TabIndex = 49
-        Me.Label1.Text = "Daftar Antrian"
-        '
-        'btn_refresh
-        '
-        Me.btn_refresh.BackgroundImage = CType(resources.GetObject("btn_refresh.BackgroundImage"), System.Drawing.Image)
-        Me.btn_refresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btn_refresh.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btn_refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_refresh.Location = New System.Drawing.Point(192, 447)
-        Me.btn_refresh.Name = "btn_refresh"
-        Me.btn_refresh.Size = New System.Drawing.Size(26, 28)
-        Me.btn_refresh.TabIndex = 48
-        Me.btn_refresh.UseVisualStyleBackColor = True
-        '
-        'ListBox2
-        '
-        Me.ListBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.ListBox2.FormattingEnabled = True
-        Me.ListBox2.Location = New System.Drawing.Point(263, 239)
-        Me.ListBox2.Name = "ListBox2"
-        Me.ListBox2.Size = New System.Drawing.Size(142, 236)
-        Me.ListBox2.TabIndex = 46
+        Me.Label1.Text = "Daftar Nama"
         '
         'ListBox1
         '
         Me.ListBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(30, 239)
+        Me.ListBox1.Location = New System.Drawing.Point(30, 252)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(142, 236)
+        Me.ListBox1.Size = New System.Drawing.Size(373, 210)
         Me.ListBox1.TabIndex = 45
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label8.Location = New System.Drawing.Point(27, 470)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(37, 13)
+        Me.Label8.TabIndex = 52
+        Me.Label8.Text = "Total :"
+        '
+        'Label_total
+        '
+        Me.Label_total.AutoSize = True
+        Me.Label_total.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label_total.Location = New System.Drawing.Point(76, 470)
+        Me.Label_total.Name = "Label_total"
+        Me.Label_total.Size = New System.Drawing.Size(10, 13)
+        Me.Label_total.TabIndex = 53
+        Me.Label_total.Text = "-"
         '
         'link_list
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(438, 492)
+        Me.Controls.Add(Me.Label_total)
+        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.btn_refresh)
-        Me.Controls.Add(Me.ListBox2)
         Me.Controls.Add(Me.ListBox1)
         Me.Name = "link_list"
-        Me.Text = "link_list"
+        Me.Text = "Linked List"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
@@ -407,7 +405,7 @@ Partial Class link_list
     Public WithEvents Check_Insert As CheckBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents btn_refresh As Button
-    Friend WithEvents ListBox2 As ListBox
     Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label_total As Label
 End Class

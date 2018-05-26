@@ -41,12 +41,14 @@
                 ListBox1.Items.Add((counter + 1).ToString & " - " & data_array(counter))
                 counter = counter + 1
                 txt_nama.Text = ""
+                Label_total.Text = counter.ToString
             Else
                 ReDim Preserve data_array(UBound(data_array) + 1)
                 data_array(counter) = txt_nama.Text.ToString
                 ListBox1.Items.Add((counter + 1).ToString & " - " & data_array(counter))
                 counter = counter + 1
                 txt_nama.Text = ""
+                Label_total.Text = counter.ToString
             End If
         End If
     End Sub
@@ -79,6 +81,7 @@
             ReDim Preserve data_array(max - 1)
             counter = counter - 1
             refresh()
+            Label_total.Text = counter.ToString
         End If
     End Sub
     Sub edit_data()
@@ -120,11 +123,47 @@
             data_array(index) = nama
 
             counter = counter + 1
+            Label_total.Text = counter.ToString
             refresh()
         End If
     End Sub
-    Sub geser()
+    Sub geser_maju()
+        Dim max As Integer = UBound(data_array, 1) 'menghitung jumlah total index pada array data_array
 
+        If max < 0 Then
+            MsgBox("Data kosong", MsgBoxStyle.Critical)
+
+        Else
+
+            Dim temp As String = data_array(max)
+            For i As Integer = max To 1 Step -1
+
+                data_array(i) = data_array(i - 1)
+            Next
+            data_array(0) = temp
+
+
+            refresh()
+        End If
+    End Sub
+    Sub geser_mundur()
+        Dim max As Integer = UBound(data_array, 1) 'menghitung jumlah total index pada array data_array
+
+        If max < 0 Then
+            MsgBox("Data kosong", MsgBoxStyle.Critical)
+
+        Else
+
+            Dim temp As String = data_array(0)
+            For i As Integer = 0 To (max - 1) Step 1
+
+                data_array(i) = data_array(i + 1)
+            Next
+            data_array(max) = temp
+
+
+            refresh()
+        End If
     End Sub
 
     Private Sub Check_tambah_CheckedChanged(sender As Object, e As EventArgs) Handles Check_tambah.CheckedChanged
@@ -199,5 +238,13 @@
 
     Private Sub btn_insert_Click(sender As Object, e As EventArgs) Handles btn_insert.Click
         insert_data()
+    End Sub
+
+    Private Sub btn_next_Click(sender As Object, e As EventArgs) Handles btn_next.Click
+        geser_maju()
+    End Sub
+
+    Private Sub btn_prev_Click(sender As Object, e As EventArgs) Handles btn_prev.Click
+        geser_mundur()
     End Sub
 End Class

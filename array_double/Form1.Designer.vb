@@ -212,7 +212,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txt_cari)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Dynamic Array"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)

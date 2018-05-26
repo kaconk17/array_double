@@ -20,69 +20,93 @@ Partial Class mian_menu
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.MenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.QueueToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.QueueToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LinkListToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MenuStrip1.SuspendLayout()
+        Me.btn_dynamic = New System.Windows.Forms.Button()
+        Me.btn_queue = New System.Windows.Forms.Button()
+        Me.btn_link = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'MenuStrip1
+        'btn_dynamic
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(343, 24)
-        Me.MenuStrip1.TabIndex = 0
-        Me.MenuStrip1.Text = "MenuStrip1"
+        Me.btn_dynamic.Location = New System.Drawing.Point(12, 50)
+        Me.btn_dynamic.Name = "btn_dynamic"
+        Me.btn_dynamic.Size = New System.Drawing.Size(75, 50)
+        Me.btn_dynamic.TabIndex = 1
+        Me.btn_dynamic.Text = "Dynamic Array"
+        Me.btn_dynamic.UseVisualStyleBackColor = True
         '
-        'MenuToolStripMenuItem
+        'btn_queue
         '
-        Me.MenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.QueueToolStripMenuItem, Me.QueueToolStripMenuItem1, Me.LinkListToolStripMenuItem1})
-        Me.MenuToolStripMenuItem.Name = "MenuToolStripMenuItem"
-        Me.MenuToolStripMenuItem.Size = New System.Drawing.Size(50, 20)
-        Me.MenuToolStripMenuItem.Text = "Menu"
+        Me.btn_queue.Location = New System.Drawing.Point(130, 50)
+        Me.btn_queue.Name = "btn_queue"
+        Me.btn_queue.Size = New System.Drawing.Size(75, 50)
+        Me.btn_queue.TabIndex = 2
+        Me.btn_queue.Text = "Queue Stack"
+        Me.btn_queue.UseVisualStyleBackColor = True
         '
-        'QueueToolStripMenuItem
+        'btn_link
         '
-        Me.QueueToolStripMenuItem.Name = "QueueToolStripMenuItem"
-        Me.QueueToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.QueueToolStripMenuItem.Text = "Dynamic Array"
+        Me.btn_link.Location = New System.Drawing.Point(246, 50)
+        Me.btn_link.Name = "btn_link"
+        Me.btn_link.Size = New System.Drawing.Size(75, 50)
+        Me.btn_link.TabIndex = 3
+        Me.btn_link.Text = "Linked List"
+        Me.btn_link.UseVisualStyleBackColor = True
         '
-        'QueueToolStripMenuItem1
+        'Label1
         '
-        Me.QueueToolStripMenuItem1.Name = "QueueToolStripMenuItem1"
-        Me.QueueToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
-        Me.QueueToolStripMenuItem1.Text = "Queue & Stack"
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(98, 9)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(118, 20)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "Struktur Data"
         '
-        'LinkListToolStripMenuItem1
+        'Label2
         '
-        Me.LinkListToolStripMenuItem1.Name = "LinkListToolStripMenuItem1"
-        Me.LinkListToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
-        Me.LinkListToolStripMenuItem1.Text = "Link List"
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(9, 121)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(61, 13)
+        Me.Label2.TabIndex = 5
+        Me.Label2.Text = "117227017"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(243, 121)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(39, 13)
+        Me.Label3.TabIndex = 6
+        Me.Label3.Text = "Label3"
         '
         'mian_menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(343, 167)
-        Me.Controls.Add(Me.MenuStrip1)
-        Me.MainMenuStrip = Me.MenuStrip1
+        Me.ClientSize = New System.Drawing.Size(333, 143)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.btn_link)
+        Me.Controls.Add(Me.btn_queue)
+        Me.Controls.Add(Me.btn_dynamic)
         Me.Name = "mian_menu"
-        Me.Text = "mian_menu"
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
+        Me.Text = "Main Menu"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents MenuToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents QueueToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents QueueToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents LinkListToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents btn_dynamic As Button
+    Friend WithEvents btn_queue As Button
+    Friend WithEvents btn_link As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
 End Class

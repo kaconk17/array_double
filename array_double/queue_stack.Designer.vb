@@ -33,8 +33,8 @@ Partial Class queue_stack
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Check_queue = New System.Windows.Forms.CheckBox()
         Me.Check_stack = New System.Windows.Forms.CheckBox()
+        Me.Check_queue = New System.Windows.Forms.CheckBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -138,16 +138,6 @@ Partial Class queue_stack
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Metode"
         '
-        'Check_queue
-        '
-        Me.Check_queue.AutoSize = True
-        Me.Check_queue.Location = New System.Drawing.Point(23, 26)
-        Me.Check_queue.Name = "Check_queue"
-        Me.Check_queue.Size = New System.Drawing.Size(58, 17)
-        Me.Check_queue.TabIndex = 39
-        Me.Check_queue.Text = "Queue"
-        Me.Check_queue.UseVisualStyleBackColor = True
-        '
         'Check_stack
         '
         Me.Check_stack.AutoSize = True
@@ -157,6 +147,16 @@ Partial Class queue_stack
         Me.Check_stack.TabIndex = 40
         Me.Check_stack.Text = "Stack"
         Me.Check_stack.UseVisualStyleBackColor = True
+        '
+        'Check_queue
+        '
+        Me.Check_queue.AutoSize = True
+        Me.Check_queue.Location = New System.Drawing.Point(23, 26)
+        Me.Check_queue.Name = "Check_queue"
+        Me.Check_queue.Size = New System.Drawing.Size(58, 17)
+        Me.Check_queue.TabIndex = 39
+        Me.Check_queue.Text = "Queue"
+        Me.Check_queue.UseVisualStyleBackColor = True
         '
         'queue_stack
         '
@@ -174,7 +174,7 @@ Partial Class queue_stack
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txt_nama)
         Me.Name = "queue_stack"
-        Me.Text = "queue_stack"
+        Me.Text = "Queue & Stack"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
