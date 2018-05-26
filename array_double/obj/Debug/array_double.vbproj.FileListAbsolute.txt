@@ -31,3 +31,16 @@ F:\Project\array_single\array_double\obj\Debug\array_double.vbproj.GenerateResou
 F:\Project\array_single\array_double\obj\Debug\array_double.link_list.resources
 F:\Project\array_single\array_double\obj\Debug\array_double.mian_menu.resources
 F:\Project\array_single\array_double\obj\Debug\array_double.queue_stack.resources
+F:\Kuliah\tugas vb\tugas UAS\array_double\obj\Debug\array_double.exe
+F:\Kuliah\tugas vb\tugas UAS\array_double\obj\Debug\array_double.xml
+F:\Kuliah\tugas vb\tugas UAS\array_double\obj\Debug\array_double.pdb
+F:\Kuliah\tugas vb\tugas UAS\array_double\bin\Debug\array_double.exe
+F:\Kuliah\tugas vb\tugas UAS\array_double\bin\Debug\array_double.pdb
+F:\Kuliah\tugas vb\tugas UAS\array_double\bin\Debug\array_double.xml
+F:\Kuliah\tugas vb\tugas UAS\array_double\obj\Debug\array_double.vbprojResolveAssemblyReference.cache
+F:\Kuliah\tugas vb\tugas UAS\array_double\obj\Debug\array_double.Form1.resources
+F:\Kuliah\tugas vb\tugas UAS\array_double\obj\Debug\array_double.link_list.resources
+F:\Kuliah\tugas vb\tugas UAS\array_double\obj\Debug\array_double.mian_menu.resources
+F:\Kuliah\tugas vb\tugas UAS\array_double\obj\Debug\array_double.Resources.resources
+F:\Kuliah\tugas vb\tugas UAS\array_double\obj\Debug\array_double.queue_stack.resources
+F:\Kuliah\tugas vb\tugas UAS\array_double\obj\Debug\array_double.vbproj.GenerateResource.Cache
